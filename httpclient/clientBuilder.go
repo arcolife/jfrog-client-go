@@ -3,8 +3,8 @@ package httpclient
 import (
 	"crypto/tls"
 	"errors"
-	"github.com/jfrog/jfrog-client-go/artifactory/auth/cert"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
+	"github.com/arcolife/jfrog-client-go/artifactory/auth/cert"
+	"github.com/arcolife/jfrog-client-go/utils/errorutils"
 	"net"
 	"net/http"
 	"time"
