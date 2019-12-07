@@ -3,12 +3,12 @@ package entitlements
 import (
 	"encoding/json"
 	"errors"
-	"github.com/jfrog/jfrog-client-go/bintray/auth"
-	"github.com/jfrog/jfrog-client-go/bintray/services/versions"
-	"github.com/jfrog/jfrog-client-go/httpclient"
-	clientutils "github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/arcolife/jfrog-client-go/bintray/auth"
+	"github.com/arcolife/jfrog-client-go/bintray/services/versions"
+	"github.com/arcolife/jfrog-client-go/httpclient"
+	clientutils "github.com/arcolife/jfrog-client-go/utils"
+	"github.com/arcolife/jfrog-client-go/utils/errorutils"
+	"github.com/arcolife/jfrog-client-go/utils/log"
 	"net/http"
 	"strings"
 )

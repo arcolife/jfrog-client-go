@@ -2,7 +2,7 @@ package fileutils
 
 import (
 	"errors"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
+	"github.com/arcolife/jfrog-client-go/utils/errorutils"
 	"io/ioutil"
 	"os"
 )

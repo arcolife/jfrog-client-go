@@ -1,8 +1,8 @@
 package bintray
 
 import (
-	"github.com/jfrog/jfrog-client-go/bintray/auth"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/arcolife/jfrog-client-go/bintray/auth"
+	"github.com/arcolife/jfrog-client-go/utils/log"
 )
 
 type Config interface {

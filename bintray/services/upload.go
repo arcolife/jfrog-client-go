@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jfrog/jfrog-client-go/bintray/auth"
-	"github.com/jfrog/jfrog-client-go/bintray/services/utils"
-	"github.com/jfrog/jfrog-client-go/bintray/services/versions"
-	"github.com/jfrog/jfrog-client-go/httpclient"
-	clientutils "github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/arcolife/jfrog-client-go/bintray/auth"
+	"github.com/arcolife/jfrog-client-go/bintray/services/utils"
+	"github.com/arcolife/jfrog-client-go/bintray/services/versions"
+	"github.com/arcolife/jfrog-client-go/httpclient"
+	clientutils "github.com/arcolife/jfrog-client-go/utils"
+	"github.com/arcolife/jfrog-client-go/utils/errorutils"
+	"github.com/arcolife/jfrog-client-go/utils/io/fileutils"
+	"github.com/arcolife/jfrog-client-go/utils/log"
 )
 
 func NewUploadService(client *httpclient.HttpClient) *UploadService {

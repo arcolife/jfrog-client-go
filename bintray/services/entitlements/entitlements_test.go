@@ -1,7 +1,7 @@
 package entitlements
 
 import (
-	"github.com/jfrog/jfrog-client-go/bintray/services/utils/tests"
+	"github.com/arcolife/jfrog-client-go/bintray/services/utils/tests"
 	"testing"
 )
 

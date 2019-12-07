@@ -1,7 +1,7 @@
 package version
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils"
+	"github.com/arcolife/jfrog-client-go/utils"
 	"strconv"
 	"strings"
 )
