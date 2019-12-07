@@ -54,6 +54,7 @@ type UploadParams struct {
 	Explode   bool   `yaml:"explode,omitempty"`
 	Override  bool   `yaml:"override,omitempty"`
 	Publish   bool   `yaml:"publish,omitempty"`
+	ShowInDownloadList bool `yaml:"showindownloadlist,omitempty"`
 	Deb       string `yaml:"pkgdeb"`
 }
 
