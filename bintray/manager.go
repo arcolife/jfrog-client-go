@@ -1,17 +1,17 @@
 package bintray
 
 import (
-	"github.com/jfrog/jfrog-client-go/bintray/services"
-	"github.com/jfrog/jfrog-client-go/bintray/services/accesskeys"
-	"github.com/jfrog/jfrog-client-go/bintray/services/entitlements"
-	"github.com/jfrog/jfrog-client-go/bintray/services/gpg"
-	"github.com/jfrog/jfrog-client-go/bintray/services/logs"
-	"github.com/jfrog/jfrog-client-go/bintray/services/packages"
-	"github.com/jfrog/jfrog-client-go/bintray/services/repositories"
-	"github.com/jfrog/jfrog-client-go/bintray/services/url"
-	"github.com/jfrog/jfrog-client-go/bintray/services/utils"
-	"github.com/jfrog/jfrog-client-go/bintray/services/versions"
-	"github.com/jfrog/jfrog-client-go/httpclient"
+	"github.com/arcolife/jfrog-client-go/bintray/services"
+	"github.com/arcolife/jfrog-client-go/bintray/services/accesskeys"
+	"github.com/arcolife/jfrog-client-go/bintray/services/entitlements"
+	"github.com/arcolife/jfrog-client-go/bintray/services/gpg"
+	"github.com/arcolife/jfrog-client-go/bintray/services/logs"
+	"github.com/arcolife/jfrog-client-go/bintray/services/packages"
+	"github.com/arcolife/jfrog-client-go/bintray/services/repositories"
+	"github.com/arcolife/jfrog-client-go/bintray/services/url"
+	"github.com/arcolife/jfrog-client-go/bintray/services/utils"
+	"github.com/arcolife/jfrog-client-go/bintray/services/versions"
+	"github.com/arcolife/jfrog-client-go/httpclient"
 )
 
 type ServicesManager struct {

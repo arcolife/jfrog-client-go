@@ -2,8 +2,8 @@ package tests
 
 import (
 	"bufio"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/arcolife/jfrog-client-go/utils/io/fileutils"
+	"github.com/arcolife/jfrog-client-go/utils/log"
 	"net"
 	"net/http"
 	"os"

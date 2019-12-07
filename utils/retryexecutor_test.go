@@ -2,7 +2,7 @@ package utils
 
 import (
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/arcolife/jfrog-client-go/utils/log"
 	"testing"
 )
 

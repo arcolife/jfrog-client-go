@@ -3,8 +3,8 @@ package fileutils
 import (
 	"bufio"
 	"bytes"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils/checksum"
+	"github.com/arcolife/jfrog-client-go/utils/errorutils"
+	"github.com/arcolife/jfrog-client-go/utils/io/fileutils/checksum"
 	"io"
 	"io/ioutil"
 	"net/url"
