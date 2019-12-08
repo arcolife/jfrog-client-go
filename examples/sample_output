@@ -1,0 +1,111 @@
+$ go run jfrog_client.go package_config_new.yaml
+
+Deleting Package.. [arcolife/debian/foobar]
+Package non-existent: Bintray response: 404 Not Found
+{
+  "message": "Repo 'debian' was not found"
+}
+Deleting Package.. [arcolife/rpm/foobar]
+Package non-existent: Bintray response: 404 Not Found
+{
+  "message": "Repo 'rpm' was not found"
+}
+Checking details.. [arcolife/debian/foobar]
+Repo does not exist.. [arcolife/debian]
+Creating Repo..
+Package [arcolife/debian/foobar] does not exist
+
+Creating Package..{
+  "name": "foobar",
+  "repo": "debian",
+  "owner": "arcolife",
+  "desc": "Debian packages",
+  "labels": [],
+  "attribute_names": [],
+  "licenses": [
+    "Apache-2.0",
+    "BSD"
+  ],
+  "custom_licenses": [],
+  "followers_count": 0,
+  "created": "2019-12-03T02:53:10.976Z",
+  "website_url": null,
+  "issue_tracker_url": null,
+  "github_repo": "arcolife/drone-bintray",
+  "github_release_notes_file": "",
+  "public_download_numbers": false,
+  "public_stats": true,
+  "linked_to_repos": [],
+  "versions": [],
+  "latest_version": null,
+  "updated": "2019-12-03T02:53:11.348Z",
+  "rating_count": 0,
+  "system_ids": [],
+  "vcs_url": "https://github.com/arcolife/drone-bintray.git",
+  "maturity": ""
+}
+
+Checking details.. [arcolife/rpm/foobar]
+Repo does not exist.. [arcolife/rpm]
+Creating Repo..
+Package [arcolife/rpm/foobar] does not exist
+
+Creating Package..{
+  "name": "foobar",
+  "repo": "rpm",
+  "owner": "arcolife",
+  "desc": "RPM packages",
+  "labels": [],
+  "attribute_names": [],
+  "licenses": [
+    "BSD",
+    "Apache-2.0"
+  ],
+  "custom_licenses": [],
+  "followers_count": 0,
+  "created": "2019-12-03T02:53:17.867Z",
+  "website_url": null,
+  "issue_tracker_url": null,
+  "github_repo": "arcolife/drone-bintray",
+  "github_release_notes_file": "",
+  "public_download_numbers": false,
+  "public_stats": true,
+  "linked_to_repos": [],
+  "versions": [],
+  "latest_version": null,
+  "updated": "2019-12-03T02:53:18.308Z",
+  "rating_count": 0,
+  "system_ids": [],
+  "vcs_url": "https://github.com/arcolife/drone-bintray.git",
+  "maturity": ""
+}
+
+Uploading Files to Package [arcolife/debian/foobar] with Publish: [true]
+params: {Pattern:files/*.deb Params:0xc00009f040 TargetPath:./ UseRegExp:false Flat:true Recursive:true Explode:false Override:false Publish:true Deb:distribution/component/architecture}
+UPLOADED 1
+FAILED:  1
+
+Signing versioned Package files.. [arcolife/debian/foobar]{
+  "message": "success"
+}
+
+Publishing GPG Signatures.. [arcolife/debian/foobar]{
+  "files": 1
+}
+
+Scheduling metadata calculation.. [arcolife/debian/foobar]
+
+Uploading Files to Package [arcolife/rpm/foobar] with Publish: [true]
+params: {Pattern:files/*.rpm Params:0xc00048c0f0 TargetPath:./ UseRegExp:false Flat:true Recursive:true Explode:false Override:false Publish:true Deb:distribution/component/architecture}
+UPLOADED 1
+FAILED:  0
+
+Signing versioned Package files.. [arcolife/rpm/foobar]{
+  "message": "success"
+}
+
+Publishing GPG Signatures.. [arcolife/rpm/foobar]{
+  "files": 1
+}
+
+Scheduling metadata calculation.. [arcolife/rpm/foobar]

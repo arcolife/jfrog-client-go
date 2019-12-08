@@ -1,0 +1,279 @@
+Config =>
+{
+  "Threads": 4,
+  "Cleanup": true,
+  "Repos": [
+    {
+      "Name": "debian",
+      "Subject": "arcolife",
+      "Config": {
+        "Type": "",
+        "IsPrivate": false,
+        "Desc": "",
+        "Labels": null,
+        "GpgSignFiles": false,
+        "GpgSignMetadata": false,
+        "GpgUseOwnerKey": false,
+        "RepoConfigFilePath": "repo_config_debian.json",
+        "YumMetadataDepth": 0,
+        "YumGroupsFile": ""
+      },
+      "Packages": [
+        {
+          "Package": "CasperLabs",
+          "Config": {
+            "Desc": "Debian packages",
+            "Labels": "",
+            "Licenses": "Apache-2.0,BSD",
+            "CustomLicenses": "",
+            "VcsUrl": "https://github.com/CasperLabs/CasperLabs.git",
+            "WebsiteUrl": "",
+            "IssueTrackerUrl": "",
+            "GithubRepo": "CasperLabs/CasperLabs",
+            "PublicDownloadNumbers": false,
+            "PublicStats": true,
+            "GithubReleaseNotesFile": ""
+          },
+          "Upload": {
+            "Pattern": "artifacts/*.deb",
+            "Files": [
+              "artifacts/casperlabs-engine-grpc-server_0.8.1_amd64.deb",
+              "artifacts/casperlabs_0.8.1_all.deb"
+            ],
+            "Subject": "",
+            "Repo": "",
+            "Package": "",
+            "Version": "v0.9.1",
+            "Desc": "",
+            "VcsTag": "",
+            "Released": "",
+            "GithubReleaseNotesFile": "",
+            "GithubUseTagReleaseNotes": false,
+            "TargetPath": "./",
+            "UseRegExp": true,
+            "Flat": false,
+            "Recursive": false,
+            "Explode": false,
+            "Override": false,
+            "Publish": true,
+            "Deb": "bionic/main/amd64,i386"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "rpm",
+      "Subject": "arcolife",
+      "Config": {
+        "Type": "rpm",
+        "IsPrivate": false,
+        "Desc": "This repo is for CasperLabs RPM packages",
+        "Labels": [
+          "casperlabs",
+          "rpm"
+        ],
+        "GpgSignFiles": false,
+        "GpgSignMetadata": false,
+        "GpgUseOwnerKey": false,
+        "RepoConfigFilePath": "repo_config_rpm.json",
+        "YumMetadataDepth": 0,
+        "YumGroupsFile": ""
+      },
+      "Packages": [
+        {
+          "Package": "CasperLabs",
+          "Config": {
+            "Desc": "RPM packages",
+            "Labels": "",
+            "Licenses": "Apache-2.0,BSD",
+            "CustomLicenses": "",
+            "VcsUrl": "https://github.com/CasperLabs/CasperLabs.git",
+            "WebsiteUrl": "",
+            "IssueTrackerUrl": "",
+            "GithubRepo": "CasperLabs/CasperLabs",
+            "PublicDownloadNumbers": false,
+            "PublicStats": true,
+            "GithubReleaseNotesFile": ""
+          },
+          "Upload": {
+            "Pattern": "artifacts/*.rpm",
+            "Files": null,
+            "Subject": "",
+            "Repo": "",
+            "Package": "",
+            "Version": "v0.9.1",
+            "Desc": "",
+            "VcsTag": "",
+            "Released": "",
+            "GithubReleaseNotesFile": "",
+            "GithubUseTagReleaseNotes": false,
+            "TargetPath": "./",
+            "UseRegExp": true,
+            "Flat": false,
+            "Recursive": false,
+            "Explode": false,
+            "Override": false,
+            "Publish": true,
+            "Deb": "distribution/component/architecture"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+Deleting Package.. [arcolife/debian/CasperLabs]
+
+Deleting Repo.. [debian]
+
+Deleting Package.. [arcolife/rpm/CasperLabs]
+
+Deleting Repo.. [rpm]
+
+Checking details.. [arcolife/debian/CasperLabs]
+Repo does not exist.. [arcolife/debian]
+Creating Repo..
+Package [arcolife/debian/CasperLabs] does not exist
+Creating Package..
+{
+  "name": "CasperLabs",
+  "repo": "debian",
+  "owner": "arcolife",
+  "desc": "Debian packages",
+  "labels": [],
+  "attribute_names": [],
+  "licenses": [
+    "Apache-2.0",
+    "BSD"
+  ],
+  "custom_licenses": [],
+  "followers_count": 0,
+  "created": "2019-12-04T14:31:50.901Z",
+  "website_url": null,
+  "issue_tracker_url": null,
+  "github_repo": "CasperLabs/CasperLabs",
+  "github_release_notes_file": "",
+  "public_download_numbers": false,
+  "public_stats": true,
+  "linked_to_repos": [],
+  "versions": [],
+  "latest_version": null,
+  "updated": "2019-12-04T14:31:51.379Z",
+  "rating_count": 0,
+  "system_ids": [],
+  "vcs_url": "https://github.com/CasperLabs/CasperLabs.git",
+  "maturity": ""
+}
+
+Checking details.. [arcolife/rpm/CasperLabs]
+Repo does not exist.. [arcolife/rpm]
+Creating Repo..
+Package [arcolife/rpm/CasperLabs] does not exist
+Creating Package..
+{
+  "name": "CasperLabs",
+  "repo": "rpm",
+  "owner": "arcolife",
+  "desc": "RPM packages",
+  "labels": [],
+  "attribute_names": [],
+  "licenses": [
+    "Apache-2.0",
+    "BSD"
+  ],
+  "custom_licenses": [],
+  "followers_count": 0,
+  "created": "2019-12-04T14:31:57.742Z",
+  "website_url": null,
+  "issue_tracker_url": null,
+  "github_repo": "CasperLabs/CasperLabs",
+  "github_release_notes_file": "",
+  "public_download_numbers": false,
+  "public_stats": true,
+  "linked_to_repos": [],
+  "versions": [],
+  "latest_version": null,
+  "updated": "2019-12-04T14:31:58.240Z",
+  "rating_count": 0,
+  "system_ids": [],
+  "vcs_url": "https://github.com/CasperLabs/CasperLabs.git",
+  "maturity": ""
+}
+
+Uploading Files to Package [arcolife/debian/CasperLabs] with Publish: [true]
+Params =>
+{
+  "Pattern": "artifacts/*.deb",
+  "Files": null,
+  "Subject": "arcolife",
+  "Repo": "debian",
+  "Package": "CasperLabs",
+  "Version": "v0.9.1",
+  "Desc": "",
+  "VcsTag": "",
+  "Released": "",
+  "GithubReleaseNotesFile": "",
+  "GithubUseTagReleaseNotes": false,
+  "TargetPath": "./",
+  "UseRegExp": false,
+  "Flat": true,
+  "Recursive": false,
+  "Explode": false,
+  "Override": false,
+  "Publish": true,
+  "Deb": "bionic/main/amd64,i386"
+}
+UPLOADED 1
+FAILED:  1
+
+Signing versioned Package files.. [arcolife/debian/CasperLabs]{
+  "message": "success"
+}
+
+Publishing GPG Signatures.. [arcolife/debian/CasperLabs]{
+  "files": 1
+}
+
+Scheduling metadata calculation.. [arcolife/debian/CasperLabs]
+{
+  "message": "Calculation was successfully scheduled for '/arcolife/debian'"
+}
+
+Uploading Files to Package [arcolife/rpm/CasperLabs] with Publish: [true]
+Params =>
+{
+  "Pattern": "artifacts/*.rpm",
+  "Files": null,
+  "Subject": "arcolife",
+  "Repo": "rpm",
+  "Package": "CasperLabs",
+  "Version": "v0.9.1",
+  "Desc": "",
+  "VcsTag": "",
+  "Released": "",
+  "GithubReleaseNotesFile": "",
+  "GithubUseTagReleaseNotes": false,
+  "TargetPath": "./",
+  "UseRegExp": false,
+  "Flat": true,
+  "Recursive": false,
+  "Explode": false,
+  "Override": false,
+  "Publish": true,
+  "Deb": "distribution/component/architecture"
+}
+UPLOADED 1
+FAILED:  0
+
+Signing versioned Package files.. [arcolife/rpm/CasperLabs]{
+  "message": "success"
+}
+
+Publishing GPG Signatures.. [arcolife/rpm/CasperLabs]{
+  "files": 1
+}
+
+Scheduling metadata calculation.. [arcolife/rpm/CasperLabs]
+{
+  "message": "Calculation was successfully scheduled for '/arcolife/rpm'"
+}

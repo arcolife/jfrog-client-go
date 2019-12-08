@@ -1,0 +1,94 @@
+{
+  "Threads": 4,
+  "Cleanup": false,
+  "Repos": [
+    {
+      "Name": "debian",
+      "Subject": "arcolife",
+      "Config": {
+        "Type": "",
+        "IsPrivate": false,
+        "Desc": "",
+        "Labels": null,
+        "GpgSignFiles": false,
+        "GpgSignMetadata": false,
+        "GpgUseOwnerKey": false,
+        "RepoConfigFilePath": "repo_config_debian.json",
+        "YumMetadataDepth": 0,
+        "YumGroupsFile": ""
+      },
+      "Packages": [
+        {
+          "Desc": "Debian packages",
+          "Labels": "",
+          "Licenses": "Apache-2.0,BSD",
+          "CustomLicenses": "",
+          "VcsUrl": "https://github.com/CasperLabs/CasperLabs.git",
+          "WebsiteUrl": "",
+          "IssueTrackerUrl": "",
+          "GithubRepo": "CasperLabs/CasperLabs",
+          "PublicDownloadNumbers": false,
+          "PublicStats": true,
+          "GithubReleaseNotesFile": "",
+          "Pattern": "",
+          "Files": [
+            "artifacts/casperlabs-engine-grpc-server_0.8.1_amd64.deb",
+            "artifacts/casperlabs_0.8.1_all.deb"
+          ],
+          "TargetPath": "./",
+          "UseRegExp": true,
+          "Flat": false,
+          "Recursive": false,
+          "Explode": false,
+          "Override": false,
+          "Publish": true,
+          "Deb": "bionic/main/amd64,i386"
+        }
+      ]
+    },
+    {
+      "Name": "rpm",
+      "Subject": "arcolife",
+      "Config": {
+        "Type": "rpm",
+        "IsPrivate": false,
+        "Desc": "This repo is for CasperLabs RPM packages",
+        "Labels": [
+          "casperlabs",
+          "rpm"
+        ],
+        "GpgSignFiles": false,
+        "GpgSignMetadata": false,
+        "GpgUseOwnerKey": false,
+        "RepoConfigFilePath": "",
+        "YumMetadataDepth": 0,
+        "YumGroupsFile": ""
+      },
+      "Packages": [
+        {
+          "Desc": "RPM packages",
+          "Labels": "",
+          "Licenses": "Apache-2.0,BSD",
+          "CustomLicenses": "",
+          "VcsUrl": "https://github.com/CasperLabs/CasperLabs.git",
+          "WebsiteUrl": "",
+          "IssueTrackerUrl": "",
+          "GithubRepo": "CasperLabs/CasperLabs",
+          "PublicDownloadNumbers": false,
+          "PublicStats": true,
+          "GithubReleaseNotesFile": "",
+          "Pattern": "artifacts/*.rpm",
+          "Files": null,
+          "TargetPath": "./",
+          "UseRegExp": true,
+          "Flat": false,
+          "Recursive": false,
+          "Explode": false,
+          "Override": false,
+          "Publish": true,
+          "Deb": "distribution/component/architecture"
+        }
+      ]
+    }
+  ]
+}
